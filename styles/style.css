@@ -6,6 +6,7 @@
 
 body{
     background-color: #000000;
+    color: #ffffff;
 }
 
 header {
@@ -89,8 +90,9 @@ header {
 }
 
 #header-bottom > nav > button {
+    color: white;
     font-size: 20px;
-    background: #39FF14;
+    background: #000000;
     border: 2px solid #1E90FF;
     padding: 10px 25px;
     cursor: pointer;
@@ -98,16 +100,21 @@ header {
     border-radius: 210px;
 }
 
-main {
-    display: flex;
-    justify-content: space-around;
-}
 
 #header-bottom > nav > button:hover {
     font-size: 20px;
-    background: #1E90FF;
+    background-color: #1E90FF;
     border: 2px solid #39FF14;
     padding: 10px 25px;
     color: white;
     
+}
+
+#header-bottom > nav > .selected {
+    border-color: #39FF14;
+}
+
+#header-bottom > nav > .selected:hover {
+    border-color: #1E90FF;
+    background-color: #39FF14;
 }
