@@ -26,6 +26,9 @@ header {
     width: 100vw;
     height: 10vh;
     min-height: 50px;
+    border-bottom: 1px solid #39FF14;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
 #logo-container {
@@ -93,6 +96,11 @@ header {
     cursor: pointer;
     font-weight: bold;
     border-radius: 210px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
 }
 
 #header-bottom > nav > button:hover {
