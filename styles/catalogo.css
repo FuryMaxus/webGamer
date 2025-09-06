@@ -28,6 +28,8 @@ main{
     
 }
 
+
+
 #lateral-menu > #category-name-container{
     padding: 5px;
     
@@ -70,7 +72,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .slider-container > input {
@@ -171,6 +173,7 @@ main{
     padding: 5px 10px;
     font-size: 20px;
     height: 50%;
+    cursor: pointer;
 }
 
 #top-menu > nav {
