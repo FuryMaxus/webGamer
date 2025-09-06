@@ -1,3 +1,25 @@
+
+
+#is:link{
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+#is:visited{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+#is:hover{
+    color: #39FF14;
+    text-decoration: underline;
+}
+
+.error{
+    
+    background-color:red;
+}
+
 #formulario{
     display: flex;
     flex-direction: column;
@@ -28,3 +50,13 @@ form > button{
     font-size: 1em;
     cursor: pointer;
 }
+
+form > button:hover{
+    background-color: #1E90FF;
+    color: white;
+}
+
+
+
+
+

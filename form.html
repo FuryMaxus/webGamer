@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level Up Gamer - Registrarse</title>
+    <title>Level Up Gamer - Registrarse</title> 
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -27,9 +27,9 @@
         </div>
         <div id="header-bottom">
             <nav>
-                <button class="selected">Inicio</button>
+                <button data-url="index.html">Inicio</button>
                 <button data-url="catalogo.html">Catalogo</button>
-                <button>Level Up</button>
+                <button >Level Up</button>
                 <button>Noticias</button>
                 <button>Acerca de</button>
             </nav>
@@ -39,32 +39,33 @@
     <form action="#" id="formulario">
         <h1>Crea tu cuenta LEVEL UP GAMER</h1>
         <div>
-            <label for="fechanacimiento">Fecha De Nacimiento</label>
-            <input type="date" id="fechanacimiento" required>
+            <label for="fechanacimiento">Fecha De Nacimiento</label >
+            <input type="date" id="fechanacimiento" >
         </div>
         <div>
             <label for="nombre">Nombre Completo</label>
-            <input type="text" id="nombre" placeholder="Joe Black" required>
+            <input type="text" id="nombre" placeholder="Joe Black" >
         </div>
         <div>
             <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="joeblack777@gmail.com" required>
+            <input type="text" id="email" placeholder="joeblack777@gmail.com" >
         </div>
         <div>
             <label for="contraseña1">Contraseña</label>
-            <input type="password" id="contraseña1" placeholder="Contraseña1234" required>
+            <input type="password" id="contraseña1" placeholder="Contraseña1234" >
         </div>
          <div>
             <label for="contraseña2">Confirmar Contraseña</label>
-            <input type="password" id="contraseña2" placeholder="Contraseña1234" required>
+            <input type="password" id="contraseña2" placeholder="Contraseña1234" >
         </div>
-
+        <p id="errores">&nbsp;</p>
         <button type="submit">Registrarse</button>
         <button type="reset" >Limpiar</button>
-        <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesion</a></p>
+        <p>¿Ya tienes una cuenta? <a href="" id="is">Iniciar sesion</a></p>
     </form>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/form.js"></script>
     
 </body>
 </html>
