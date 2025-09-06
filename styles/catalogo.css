@@ -2,35 +2,209 @@ main{
     margin-top: 40px;
     display: flex;
     width: 100%;
-    height: 100%;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     color: white;
 }
 
 
 #lateral-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     width: 20%;
-    height: 500vh;
     border-radius: 20px;
     border: 2px solid #39FF14;
+    padding: 5px;
+}
+
+#lateral-menu > div:not(#category-name-container){
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #39FF14;
+    padding: 10px;
+    flex-direction: column;
+    gap: 1em;
     
 }
+
+#lateral-menu > #category-name-container{
+    padding: 5px;
+    
+}
+
+.radio-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.radio-container > label {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.radio-container > label > input {
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #39FF14;
+    border-radius: 6px;       
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-container > label > input:hover {
+    background-color:#39FF14;
+}
+
+.radio-container > label > input:checked {
+    background-color: #1E90FF;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-container > input {
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+.slider-container > input::-webkit-slider-runnable-track,
+.slider-container > input::-moz-range-track{
+    height: 10px;
+    background: #39FF14;
+    border-radius: 5px;
+}
+
+.slider-container > input::-webkit-slider-thumb,
+.slider-container > input::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #1E90FF;
+  border-radius: 50%;
+  cursor: grab;
+  border: none;
+}
+
 
 #main-catalog-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
     border-radius: 20px;
-    height: 500vh;
-    width: 72%;
+    height: 100%;
+    width: 74%;
     gap: 10px;
 }
 
-#top-menu{
+#category-selector-container{
     border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    
+}
+
+#category-selector-container > button {
+    width: 95px;
+    height: 125px;
+    border: 2px solid #39FF14;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+#category-selector-container > button > img {
+    width: 80px;
+    height: 80px;
+}
+
+#category-selector-container > .current-category {
+    background-color: #1E90FF;
+}
+
+#category-selector-container > button:hover{
+    border-color: #1E90FF;
+}
+
+#category-selector-container > button:active{
+    background-color: #39FF14;
+}
+
+.vertical-catalog-menu-container{
+    border-radius: 10px;
+    display: flex;
     border: 2px solid #39FF14;
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#top-menu > select{
+    border: none;
+    border-bottom: 2px solid #1E90FF;
+    color: white;
+    background-color: #000000;
+    padding: 5px 10px;
+    font-size: 20px;
+    height: 50%;
+}
+
+#top-menu > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pagination-list{
+    gap: 10px;
+    display: flex;
+    list-style: none;
+}
+
+.pagination-list > li > a{
+    padding: 2px 9px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.pagination-list > li > a:hover:not(.disabled-link):not() {
+    background-color: #1e8fff1c;
+}
+
+.pagination-list > li > .current-page {
+    background-color: #1E90FF;
+}
+
+.pagination-list > li > .disabled-link {
+    cursor: not-allowed;
+    opacity: .6;
 }
 
 #product-grid{
@@ -100,3 +274,9 @@ main{
 .product > button:hover {
     background-color: #39FF14;
 }
+
+.product > button:active   {
+    background-color: #1E90FF;
+}
+
+
