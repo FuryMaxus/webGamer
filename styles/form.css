@@ -39,7 +39,7 @@
     
 }
 
-form > h1{
+#formulario > h1{
     margin: 0 0 1.5rem 0;
     text-align: center;
 }
@@ -48,7 +48,7 @@ input{
     border: solid 2.5px #1E90FF;
 }
 
-form > button{
+#formulario > button{
     background-color: #39FF14;
     border: 2px solid #1E90FF;
     border-radius: 20px;
@@ -57,7 +57,7 @@ form > button{
     cursor: pointer;
 }
 
-form > button:hover{
+#formulario > button:hover{
     background-color: #1E90FF;
     color: white;
 }
