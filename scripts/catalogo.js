@@ -151,3 +151,12 @@ cambiarCategoriaCatalogo("btn-mouse",mouse,cantidadProductos);
 cambiarCategoriaCatalogo("btn-pad",pad,cantidadProductos);
 cambiarCategoriaCatalogo("btn-polera",polera,cantidadProductos);
 cambiarCategoriaCatalogo("btn-poleron",poleron,cantidadProductos);
+
+
+
+document.getElementById('product-grid').addEventListener('click', function(e) {
+    const product = e.target.closest('.product');
+    if (product) {
+        window.location.href = 'detalleProducto.html';
+    }
+});

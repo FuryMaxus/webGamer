@@ -1,12 +1,10 @@
 main{
-    margin-top: 40px;
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: flex-start;
     color: white;
 }
-
 
 #lateral-menu {
     display: flex;
@@ -28,11 +26,12 @@ main{
     
 }
 
-
-
 #lateral-menu > #category-name-container{
     padding: 5px;
-    
+}
+
+#category-name {
+    overflow: scroll;
 }
 
 .radio-container {
@@ -119,23 +118,16 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 150px;
+    flex-wrap: wrap;
+    height: auto;
+    gap: 3px;
     
 }
 
 #category-selector-container > button {
+    flex-direction: column;
     width: 95px;
     height: 125px;
-    border: 2px solid #39FF14;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    
 }
 
 #category-selector-container > button > img {
@@ -145,14 +137,6 @@ main{
 
 #category-selector-container > .current-category {
     background-color: #1E90FF;
-}
-
-#category-selector-container > button:hover{
-    border-color: #1E90FF;
-}
-
-#category-selector-container > button:active{
-    background-color: #39FF14;
 }
 
 .vertical-catalog-menu-container{
@@ -212,8 +196,9 @@ main{
 
 #product-grid{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap:10px
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:10px;
+    
 }
 
 .product {
@@ -261,13 +246,9 @@ main{
 }
 
 .product > button {
-    background-color: #000000;
     border: 2px solid #1E90FF;
     font-size: 20px;
     padding: 5px 40px;
-    color: #ffffff;
-    border-radius: 10px;
-    cursor: pointer;
 }
 
 .product:hover > button {
