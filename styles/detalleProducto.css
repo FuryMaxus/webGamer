@@ -32,7 +32,7 @@ main{
     align-items: center;
     border: 4px solid #39FF14;
     border-radius: 10px;
-    padding: 1vh 1vw;
+    padding: 5vh 5vw;
     row-gap: 1em;
     
 }
@@ -40,6 +40,10 @@ main{
 #primary-info-details{
     display: flex;
     flex-direction: column;
+}
+
+#primary-info-details > h3 {
+    color: #D3D3D3;
 }
 
 #star-raiting{
@@ -65,6 +69,7 @@ main{
     justify-content: center;
     align-items: flex-start;
     gap: .5em;
+    
 }
 
 #producto-list-specifications > ul{
@@ -75,7 +80,24 @@ main{
     gap: .5em;
     font-size: 15px;
     text-align: start;
+    color:  #D3D3D3;
     
+}
+
+#producto-list-specifications > ul > li::marker{
+    color: #1E90FF;
+    
+}
+
+#producto-list-specifications > ul > li > ul > li::marker{
+    color: #1E90FF;
+    
+}
+
+#vertical-line {
+    background-color: #39FF14;
+    width: 2px;
+    height: 100%;
 }
 
 #detail-price-container {
@@ -83,7 +105,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: .5em;
+    gap: .75em;
 }
 
 #detail-price-container > h2 {
@@ -96,7 +118,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: .25em;
+    gap: .5em;
 }
 
 #product-quantity-container {
@@ -115,9 +137,129 @@ main{
     padding: .5em 3.5em;
 }
 
-#reviews-container{
+#reviews-main-container{
     border: 4px solid #39FF14;
     border-radius: 10px;
     height: 10vh;
     grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1em;
+    gap: 1em;
+}
+
+#reviews-main-container > h1{
+    align-self: start;
+}
+
+#reviews-main-container > hr {
+    width: 100%;
+    color: #39FF14;
+}
+
+#reviews-container-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+}
+
+
+#reviews-container-left{
+    display: flex;
+    flex-direction: column; 
+    width: 24rem;
+    height: 20rem;
+    padding: 1em;
+    gap: 1em;
+}
+
+
+#review-puntation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    padding: 10px;
+    border-bottom: 2px solid #39FF14;
+}
+
+#review-puntation > h2 {
+    font-size: 40px;
+}
+
+#review-puntation > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#calification-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#calification-graph > div {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#calification-graph > div > button > i {
+    color: #1E90FF;
+}
+
+.calification-graph-bar {
+    width: 75%;
+    height: 10px;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid #39FF14;
+}
+
+.calification-graph-bar > div {
+    position: absolute;
+    height: 10px;
+    background-color: #1E90FF;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px; 
+}
+
+#five-star-bar-content {
+    width: 40.35%;
+}
+
+#four-star-bar-content{
+    width: 35.09%;
+}
+
+#three-star-bar-content {
+    width: 12.28%;
+}
+
+#two-star-bar-content {
+    width: 8.77%;
+}
+
+#one-star-bar-content {
+    width: 3.51%;
+}
+
+.calification-graph-bar-value {
+    color: #D3D3D3;
+}
+
+#reviews-container-right {
+    background-color: blue;
+    width: 45rem;
+    height: auto;
 }

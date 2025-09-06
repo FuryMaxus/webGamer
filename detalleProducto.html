@@ -55,7 +55,7 @@
             </div>
             <div id="especifics-details-container">
                 <div id="producto-list-specifications">
-                    <h2>Especificaciones</h2>
+                    <h2>Caracteristicas</h2>
                     <ul>
                         <li>Procesador (CPU): AMD Ryzen 5 4650G (6 núcleos / 12 hilos, hasta 4.2 GHz)</li>
                         <li>Gráficos Integrados: Radeon Vega 7 Graphics</li>
@@ -77,20 +77,81 @@
                         
                     </ul>
                 </div>
+                <div id="vertical-line"></div>
                 <div id="detail-price-container">
                     <h2>$699.999</h2>
                     <form>
                         <div id="product-quantity-container">
-                            <label for="product-quantity">Cantidad</label>
+                            <label for="product-quantity">Cantidad: </label>
                             <input name="product-quantity" name="product-quantity" type="number" min="1" max="10">
                         </div>    
                         <button>Añadir al Carro</button>
+                        <button>Comprar ahora</button>
                     </form>
                     
                 </div>
             </div>
         </section>
-        <section id="reviews-container">
+        <section id="reviews-main-container">
+            <h1>Opiniones del Producto</h1>
+            <hr>
+            <div id="reviews-container-content">
+                <div id="reviews-container-left"> 
+                    <div id="review-puntation"> 
+                        <h2>4.0</h2>
+                        <div>
+                            <div id="star-raiting">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                            <p>57 Reseñas</p>
+                        </div> 
+                    </div>
+                    <article id="calification-graph">
+                        <h3>Calificaciones</h3>
+                        <div>
+                            <button><i class="fa-solid fa-star"></i>5</button>
+                            <div class="calification-graph-bar">
+                                <div id="five-star-bar-content"></div>
+                            </div>
+                            <span class="calification-graph-bar-value">23</span>
+                        </div>
+                        <div>
+                            <button><i class="fa-solid fa-star"></i>4</button>
+                            <div class="calification-graph-bar">
+                                <div id="four-star-bar-content"></div>
+                            </div>
+                            <span class="calification-graph-bar-value">20</span>
+                        </div>
+                        <div>
+                            <button><i class="fa-solid fa-star"></i>3</button>
+                            <div class="calification-graph-bar">
+                                <div id="three-star-bar-content"></div>
+                            </div>
+                            <span class="calification-graph-bar-value">7</span>
+                        </div>
+                        <div>
+                            <button><i class="fa-solid fa-star"></i>2</button>
+                            <div class="calification-graph-bar">
+                                <div id="two-star-bar-content"></div>
+                            </div>
+                            <span class="calification-graph-bar-value">5</span>
+                        </div>
+                        <div>
+                            <button><i class="fa-solid fa-star"></i>1</button>
+                            <div class="calification-graph-bar">
+                                <div id="one-star-bar-content"></div>
+                            </div>
+                            <span class="calification-graph-bar-value">2</span>
+                        </div>
+                    </article>
+                </div>
+                
+                <div id="reviews-container-right">aaaaaaaaaa</div>
+            </div>
             
         </section>
     </main>
@@ -126,6 +187,9 @@
         </div>
         <div id="footer-bottom"><div><span>2025 Level Up Gamer</span>. Todos los derechos reservados</div></div>
     </footer>
+
+    <img id="whatsaap-absolute" src="images/whatsaap_icon.png" alt="whatsaap">
+
     <script src="scripts/script.js"></script>
 </body>
 </html>

@@ -38,6 +38,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: .5em;
+    
 }
 
 .radio-container > label {
@@ -46,12 +47,14 @@ main{
     align-items: center;
     font-size: 18px;
     cursor: pointer;
+    
 }
 
 .radio-container > label > input {
     appearance: none;
     width: 30px;
     height: 30px;
+
     border: 2px solid #39FF14;
     border-radius: 6px;       
     vertical-align: middle;
@@ -66,6 +69,7 @@ main{
 .radio-container > label > input:checked {
     background-color: #1E90FF;
 }
+
 
 .slider-container {
     display: flex;
