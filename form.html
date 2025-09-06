@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up Gamer - Registrarse</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <div id="header-top">
+            <div id="logo-container">
+                <img src="images/Level-Up.png" alt="logo level-up gamer" id="logo">
+            </div>
+            <div id="search-bar-container">
+                <form action="#">
+                    <input type="text" placeholder="Busqueda">
+                </form>
+            </div>
+            <div id="session-buttons-container">
+                <button>aaa</button>
+                <button>bbb</button>
+                <button>bbb</button>
+            </div>
+        </div>
+    </header>
+
+    <form action="#" id="formulario">
+        <h1>Crea tu cuenta "WEBGAMER"</h1>
+        <div>
+            <label for="fechanacimiento">Fecha De Nacimiento</label>
+            <input type="date" id="fechanacimiento" required>
+        </div>
+        <div>
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" placeholder="Joe Black" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="joeblack777@gmail.com" required>
+        </div>
+        <div>
+            <label for="contraseña1">Contraseña</label>
+            <input type="password" id="contraseña1" placeholder="Contraseña1234" required>
+        </div>
+         <div>
+            <label for="contraseña2">Confirmar Contraseña</label>
+            <input type="password" id="contraseña2" placeholder="Contraseña1234" required>
+        </div>
+
+        <button type="submit">Registrarse</button>
+        <button type="reset" >Limpiar</button>
+        <p>¿Ya tienes una cuenta? <a href="#">Iniciar sesion</a></p>
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
