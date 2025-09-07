@@ -1,0 +1,75 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    height: auto;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:10px;
+    width: 80%;
+    gap: 1.5rem;
+    
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #39FF14;
+    gap: 3px;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.news-item > p{
+    color: #D3D3D3;
+}
+
+.news-item:hover{
+    transform: scale(1.05);
+    border: 2px solid #1E90FF;
+    .news-img{
+        border: 2px solid #39FF14;
+    }
+}
+
+.news-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    border: 2px solid #1E90FF;
+}
+
+#news-img-1{
+    background-image: url(https://pbs.twimg.com/amplify_video_thumb/1961084302591954944/img/KlQcyjBnserscV_7.jpg);
+}
+
+#news-img-2{
+    background-image: url(https://cdn.mos.cms.futurecdn.net/5mgtRSr2nzcEzTMFoa4YEc-650-80.jpg.webp);
+}
+
+#news-img-3{
+    background-image: url(https://www.infobae.com/resizer/v2/P5JA4DBRLZD6ZG5X77UG2IDCWU.jpg?auth=183857762fbae09e9af3d6d54523deaa71c92be52e083e90ce77e7e1874ccbf3&smart=true&width=992&height=558&quality=85);
+}
+
+#news-img-4{
+    background-image: url(https://pbs.twimg.com/card_img/1964086578860429313/ebAA5vP7?format=jpg&name=small);
+}
+
+#news-img-5 {
+    background-image: url(https://www.hsbnoticias.com/wp-content/uploads/2025/08/gamescom-2025-ONL.webp);
+}
+
+#news-img-6{
+    background-image: url(https://gaming-cdn.com/images/news/articles/985/cover/1000x563/la-empresa-saudita-savvy-games-group-ha-adquirido-el-estudio-scopely-cover642e895a4afc1.jpg);
+}
