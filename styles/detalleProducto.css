@@ -1,0 +1,351 @@
+main{
+    height: auto;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+
+}
+
+#pic-section {
+    border: 4px solid #39FF14;
+    border-radius: 10px;
+}
+
+#pic-section > img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+#pic-section > div {
+    height: 11vh;
+    width: 100%;
+}
+
+#main-details-sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 4px solid #39FF14;
+    border-radius: 10px;
+    padding: 5vh 5vw;
+    row-gap: 1em;
+    
+}
+
+#primary-info-details{
+    display: flex;
+    flex-direction: column;
+}
+
+#primary-info-details > h3 {
+    color: #D3D3D3;
+}
+
+#star-raiting{
+    color: #1E90FF;
+}
+
+#especifics-details-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3em;
+    
+}
+
+#especifics-details-container > div {
+    max-width: 50%;
+}
+
+#producto-list-specifications{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5em;
+    
+}
+
+#producto-list-specifications > ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5em;
+    font-size: 15px;
+    text-align: start;
+    color:  #D3D3D3;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    list-style: disc;           
+    padding-left: 20px;         
+    
+}
+
+#producto-list-specifications > ul > li::marker{
+    color: #1E90FF;
+    
+}
+
+#producto-list-specifications > ul > li > ul > li::marker{
+    color: #1E90FF;
+    
+}
+
+#vertical-line {
+    background-color: #39FF14;
+    width: 2px;
+    height: 100%;
+}
+
+#detail-price-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+#detail-price-container > h2 {
+    padding-left: 1rem;
+    color: #1E90FF;
+}
+
+#detail-price-container > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: .5em;
+}
+
+#product-quantity-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding-left: 1em;
+}
+
+#detail-price-container > form > button{
+    margin-top: .5em;
+    font-size: 20px;
+    width: auto;
+    border-radius: 20px;
+    padding: .5em 3.5em;
+}
+
+#share-product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+#share-links-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+}
+
+#reviews-main-container{
+    border: 4px solid #39FF14;
+    border-radius: 10px;
+    height: 10vh;
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 1em;
+    gap: 1em;
+}
+
+#reviews-main-container > h1{
+    align-self: start;
+}
+
+#reviews-main-container > hr {
+    width: 100%;
+    color: #39FF14;
+}
+
+#reviews-container-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1em;
+
+}
+
+
+#reviews-container-left{
+    display: flex;
+    flex-direction: column; 
+    width: 24rem;
+    height: 20rem;
+    padding: 1em;
+    gap: 1em;
+}
+
+
+#review-puntation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    padding: 10px;
+    border-bottom: 2px solid #39FF14;
+}
+
+#review-puntation > h2 {
+    font-size: 40px;
+}
+
+#review-puntation > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#calification-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#calification-graph > div {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+#calification-graph > div > button > i {
+    color: #1E90FF;
+}
+
+.calification-graph-bar {
+    width: 75%;
+    height: 10px;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    position: relative;
+    border: 2px solid #39FF14;
+}
+
+.calification-graph-bar > div {
+    position: absolute;
+    height: 10px;
+    background-color: #1E90FF;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px; 
+}
+
+#five-star-bar-content {
+    width: 40.35%;
+}
+
+#four-star-bar-content{
+    width: 35.09%;
+}
+
+#three-star-bar-content {
+    width: 12.28%;
+}
+
+#two-star-bar-content {
+    width: 8.77%;
+}
+
+#one-star-bar-content {
+    width: 3.51%;
+}
+
+.calification-graph-bar-value {
+    color: #D3D3D3;
+}
+
+#reviews-container-right {
+    width: 45rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 1em;
+    gap: 1em;
+}
+
+#reviews-container-right > hr {
+    width: 100%;
+    color: #39FF14;
+}
+
+#reviews-container-right > button {
+    padding: .5em 1em;
+}
+
+#reviews-container-right > button > i {
+    color: #1E90FF;
+}
+
+#button-show-more-reviews {
+    align-self: center;
+}
+
+#review-filterer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+
+
+#review-filterer-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5em;
+}
+#review-filterer-container > div > button{
+    padding: 0.5em 1em;
+    font-size: 1em;
+    justify-content: space-around;
+}
+
+
+#review-filterer-container > div > button > i {
+    color: #1E90FF;
+    
+}
+
+.user-review-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.user-review-container > div {
+    display: flex;
+    gap: .5em;
+}
+
+.user-review-star-ranking > i {
+    color: #1E90FF;
+}
+
+

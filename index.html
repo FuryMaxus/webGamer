@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Up Gamer - Inicio</title>
+    <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
@@ -25,14 +26,61 @@
         </div>
         <div id="header-bottom">
             <nav>
-                <button class="selected">Inicio</button>
+                <button data-url="index.html" class="selected">Inicio</button>
                 <button data-url="catalogo.html">Catalogo</button>
-                <button>Level Up</button>
-                <button>Noticias</button>
-                <button>Acerca de</button>
+                <button data-url="#" >Level Up</button>
+                <button data-url="#" >Noticias</button>
+                <button data-url="#" >Acerca de</button>
             </nav>
         </div>
     </header>
+    <main>
+        <section>
+            <div id="image-carrusel">
+                <img src="images/banner1.png" alt="Banner 1" class="carrusel-img active">
+                <button id="prev-carrusel" class="carrusel-button">&#10094;</button>
+                <button id="next-carrusel" class="carrusel-button">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-top">
+            <div>
+                <img src="images/Level-Up.png" alt="logo level-up gamer" id="logo">
+                <h3>Siguenos</h3>
+                <div class="contact-links-container">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <form action="#">
+                <label for="subscription-input"><h3>Mantente Informado</h3></label>
+                <input name="subscription-input" type="text" placeholder="Ingresa tu correo!">
+                <button>Suscribete</button>
+            </form>
+            <div id="interest-sites-container">
+                <h2>Sitios de Interes</h2>
+                <a href="#"><p>Contactanos</p></a>
+                <a href="#"><p>Nuestras Garantias</p></a>
+                <a href="#"><p>Terminos y condiciones</p></a>
+            </div>
+            <div id="contact-us-container">
+                <h2>Contactenos</h2>
+                <p>consultas@levelupgames.cl</p>
+                <p>+56 9 3581 1266</p>
+            </div>
+        </div>
+        <div id="footer-bottom">
+            <div><span>2025 Level Up Gamer</span>. Todos los derechos reservados</div>
+        </div>
+    </footer>
+
+    <img id="whatsaap-absolute" src="images/whatsaap_icon.png" alt="whatsaap">
+
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
