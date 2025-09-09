@@ -64,6 +64,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #logo-container > img {
@@ -131,7 +132,7 @@ header {
 }
 
 
-#header-bottom > nav > .selected {
+#header-bottom > nav > .selected-button-header {
     background-color: #1E90FF;
 }
 
@@ -228,7 +229,7 @@ footer{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    width: 80px;
+    width: 70px;
     z-index: 999;
     cursor: pointer;
     opacity: .45;
