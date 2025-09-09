@@ -64,6 +64,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #logo-container > img {
@@ -131,7 +132,7 @@ header {
 }
 
 
-#header-bottom > nav > .selected {
+#header-bottom > nav > .selected-button-header {
     background-color: #1E90FF;
 }
 

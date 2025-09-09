@@ -1,0 +1,30 @@
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+    border: 2px solid #39FF14;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    border-radius: 10px;
+
+}
+
+p,ul{
+    color: #D3D3D3;
+}
+
+li::marker{
+    color: #1E90FF;
+}
+
+span {
+    font-weight: bold;
+}
+
