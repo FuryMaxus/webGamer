@@ -1,3 +1,3 @@
-Evaluacion numero 1 de FullStack II
-Forma B tienda LEVEL-UP GAMER
-por Vicente East y Jose Valenzuela
+# Evaluacion 1 de FullStack II
+Forma B, tienda LEVEL-UP GAMER \
+Por Vicente East y Jose Valenzuela
