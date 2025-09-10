@@ -113,8 +113,6 @@ header {
 
 }
 
-
-
 #cart-icon {
     position: relative;
 }
@@ -139,6 +137,10 @@ header {
     align-items: center;
     height: 10vh;
     min-height: 50px;
+}
+
+#logo {
+    cursor: pointer;
 }
 
 #header-bottom > nav {
@@ -173,6 +175,8 @@ footer{
     align-items: center;
     text-align: center;
 }
+
+
 
 #footer-top > div{
     display: flex;
@@ -231,7 +235,6 @@ footer{
 #interest-sites-container,  #contact-us-container{
     align-items: flex-start;
 }
-
 
 #footer-bottom{
     display: flex;
