@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level Up Gamer - Inicia Sesión</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/inicioSesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body>
+<header>
+        <div id="header-top">
+            <div id="logo-container">
+                <img src="images/Level-Up.png" alt="logo level-up gamer" id="logo">
+            </div>
+            <div id="search-bar-container">
+                <form action="#">
+                    <input type="text" placeholder="Busqueda">
+                </form>
+            </div>
+            <div id="session-buttons-container">
+                <a href="#"><i class="fa-solid fa-cart-shopping icono-header"></i></a>
+                <a href="inicioSesion.html"><i class="fa-regular fa-user icono-header"style="color: #1E90FF;"></i></a>
+                <a href="form.html"><i class="fa-solid fa-user-plus icono-header"></i></a>
+            </div>
+        </div>
+        <div id="header-bottom">
+            <nav>
+                <button data-url="index.html">Inicio</button>
+                <button data-url="catalogo.html">Catalogo</button>
+                <button data-url="#">Level Up</button>
+                <button data-url="noticias.html">Noticias</button>
+                <button data-url="acercaDe.html">Acerca de</button>
+            </nav>
+        </div>
+    </header>
+
+    <form action="#" id="form_inicio">
+        <h1>Inicia Sesión con tu cuenta LEVEL UP GAMER</h1>
+        <div>
+            <label for="e-mail">E-mail</label>
+            <input type="text" id="e-mail" placeholder="Ingresa tu E-mail">
+        </div>
+        <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" placeholder="Ingresa tu contraseña">
+        </div>
+        <p id="error">&nbsp;</p>
+        <button type="submit">Iniciar Sesión</button>
+        <button type="reset" >Limpiar</button>
+        <p>¿No tienes una cuenta? <a href="form.html" id="reg">Regístrate</a></p>
+    </form>
+     <script src="scripts/script.js"></script>
+     <script src="scripts/inicio_sesion.js"></script>
+</body>
+</html>

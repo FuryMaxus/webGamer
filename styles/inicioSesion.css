@@ -1,16 +1,15 @@
 
-
-#is:link{
+#reg:link{
     color: #1E90FF;
     text-decoration: none;
 }
 
-#is:visited{
+#reg:visited{
     color: blueviolet;
     text-decoration: none;
 }
 
-#is:hover{
+#reg:hover{
     color: #39FF14;
     text-decoration: underline;
 }
@@ -20,8 +19,7 @@
     background-color:red;
 }
 
-
-#formulario{
+#form_inicio{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,8 +36,7 @@
     height: 500px;
     
 }
-
-#formulario > h1{
+#form_inicio > h1{
     margin: 0 0 1.5rem 0;
     text-align: center;
 }
@@ -48,7 +45,7 @@ input{
     border: solid 2.5px #1E90FF;
 }
 
-#formulario > button{
+#form_inicio > button{
     color: black;
     background-color: #39FF14;
     border: 2px solid #1E90FF;
@@ -58,12 +55,9 @@ input{
     cursor: pointer;
 }
 
-#formulario > button:hover{
+#form_inicio > button:hover{
     background-color: #1E90FF;
     color: white;
 }
-
-
-
 
 
