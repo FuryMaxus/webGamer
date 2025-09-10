@@ -42,7 +42,7 @@ nombre.addEventListener('keyup', function (e) {
 
 email.addEventListener('keyup', function (e) {
     if (!email.value.includes("@")) {
-        exportemail.classList.add("error");
+        email.classList.add("error");
         errores.innerHTML = "Error, ingrese un signo arroba (@)!.";
     } else {
         email.classList.remove("error");
@@ -64,6 +64,7 @@ function contraseñas() {
 }
 
 formulario.addEventListener('submit', function (e) {
+    let edad = calcularEdad(fechanacimiento.value); //sin esto no pone los campos en rojo al mandar registrarse con todo vacío.
     if (edad < 18){  
         fechanacimiento.classList.add("error");
     }
