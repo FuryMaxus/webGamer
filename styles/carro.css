@@ -1,0 +1,84 @@
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+section{
+    border: 2px solid #39FF14;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+#cart-products-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 56vw;
+    gap: .5em ;
+    padding: 1em;
+}
+
+#checkbox-select-all-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    align-self: start;
+    margin-left: 1.5em;
+}
+
+hr{
+    width: 100%;
+    color: #39FF14;
+}
+
+ input[type="checkbox"] {
+    accent-color: #1E90FF;
+    width: 30px;
+    height: 30px;
+}
+
+.cart-product{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.cart-product > img {
+    width: 150px;
+}
+
+.cart-product  button {
+    background-color: red;
+    padding: 1em;
+    font-weight: bold;
+
+}
+
+#cart-total-payment-container{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-self: center;
+    align-self: flex-start;
+    padding: 1em;
+    gap:1em;
+}
+
+#cart-total-payment-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-total-payment-container > button {
+    padding: 0.5em;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}

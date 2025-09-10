@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Up Gamer - Inicio</title>
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/carro.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
@@ -19,9 +19,8 @@
                 </form>
             </div>
             <div id="session-buttons-container">
-
                 <a href="carro.html" id="cart-icon"><span>3</span><i class="fa-solid fa-cart-shopping icono-header"></i></a>
-                <a href="inicioSesion.html"><i class="fa-regular fa-user icono-header"></i></a>
+                <a href="#"><i class="fa-regular fa-user icono-header"></i></a>
                 <a href="form.html"><i class="fa-solid fa-user-plus icono-header"></i></a>
             </div>
         </div>
@@ -36,12 +35,64 @@
         </div>
     </header>
     <main>
-        <section>
-            <div id="image-carrusel">
-                <img src="images/banner1.png" alt="Banner 1" class="carrusel-img active">
-                <button id="prev-carrusel" class="carrusel-button">&#10094;</button>
-                <button id="next-carrusel" class="carrusel-button">&#10095;</button>
+        <section id="cart-products-container">
+            <h1>Carro</h1>
+            <div id="checkbox-select-all-container">
+                <input type="checkbox" name="" id="" checked>
+                <label for="">Seleccionar todos</label>
             </div>
+            <hr>
+            <div class="cart-product">
+                <input type="checkbox" name="cart-product-selected" id="product1" checked>
+                <img src="images/example.png" alt="">
+                <div>
+                    <h3>Nombre Producto 1</h3>
+                    <p>marca</p>
+                </div>
+                <div>$100.000</div>
+                <button>Eliminar</button>
+            </div>
+            <hr>
+            <div class="cart-product">
+                <input type="checkbox" name="cart-product-selected" id="product1" checked>
+                <img src="images/example.png" alt="">
+                <div>
+                    <h3>Nombre Producto 2</h3>
+                    <p>marca</p>
+                </div>
+                <div>$50.000</div>
+                <button>Eliminar</button>
+            </div>
+            <hr>
+            <div class="cart-product">
+                <input type="checkbox"  name="cart-product-selected" id="product1" checked>
+                <img src="images/example.png" alt="">
+                <div>
+                    <h3>Nombre Producto 3</h3>
+                    <p>marca</p>
+                </div>
+                <div>$4999</div>
+                <button>Eliminar</button>
+            </div>
+            <hr>
+        </section>
+        <section id="cart-total-payment-container">
+            <h1>Resumen de Compra</h1>
+            <div>
+                <p>Productos(3)</p>
+                <p>$154.999</p>
+            </div>
+            <hr>
+            <div>
+                <p>Descuentos(0)</p>
+                <p>$0</p>
+            </div>
+            <hr>
+            <div>
+                <p>Total:</p>
+                <p>$154.999</p>
+            </div>
+            <button>Continuar Compra</button>
         </section>
     </main>
     <footer>

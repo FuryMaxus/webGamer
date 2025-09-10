@@ -57,20 +57,17 @@ const pad = new Categoria("Mousepads","pad.webp",marcasPad,
 const polera = new Categoria("Poleras","polera.png",["Level Up Gamer"],
     "Polera","$19.000");
 
-const poleron = new Categoria("Polerones","poleron.png",["Level Up Gamer"],
+const poleron = new Categoria("Polerones","poleron.webp",["Level Up Gamer"],
     "Poleron","$24.000");
 
 
 
 
-const btnPolera = document.getElementById("btn-polera")
-const btnPoleron = document.getElementById("btn-poleron")
-const btnService = document.getElementById("btn-service")
-
-
 function cambiarMenuLateral(categoria) {
+
     const elementNombreCategoria = document.getElementById("category-name");
     const elementDivMarcas = document.getElementById("brands-container");
+    
     elementNombreCategoria.innerHTML = categoria.nombreCategoria ;
         elementDivMarcas.replaceChildren();
 
