@@ -5,6 +5,30 @@ const contraseña1 = document.getElementById('contraseña1');
 const contraseña2 = document.getElementById('contraseña2');
 const formulario = document.getElementById('formulario');
 const errores = document.getElementById('errores');
+const fechanacimiento = document.getElementById('fechanacimiento');
+
+hoy=new Date();
+function calcularEdad(fechaNacimiento) {
+fechaNacimiento= new Date(fechanacimiento.value);
+let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+const mes = hoy.getMonth() - fechaNacimiento.getMonth();
+
+if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+    edad--;
+}  
+    return edad;
+}
+
+fechanacimiento.addEventListener('change', function (e) {
+    let edad = calcularEdad(fechanacimiento.value);
+    if (edad < 18) {
+    fechanacimiento.classList.add("error");
+    errores.innerHTML = "Debes ser mayor de 18 años para registrarte!."; 
+    }else{
+     fechanacimiento.classList.remove("error");
+    errores.innerHTML = "&nbsp;";
+    }
+})
 
 nombre.addEventListener('keyup', function (e) {
     if (nombre.value.length < 3) {
@@ -40,6 +64,9 @@ function contraseñas() {
 }
 
 formulario.addEventListener('submit', function (e) {
+    if (edad < 18){  
+        fechanacimiento.classList.add("error");
+    }
     if (nombre.value.length < 3) {
         nombre.classList.add("error");
     }
