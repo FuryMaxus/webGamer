@@ -64,8 +64,10 @@ const poleron = new Categoria("Polerones","poleron.webp",["Level Up Gamer"],
 
 
 function cambiarMenuLateral(categoria) {
+
     const elementNombreCategoria = document.getElementById("category-name");
     const elementDivMarcas = document.getElementById("brands-container");
+    
     elementNombreCategoria.innerHTML = categoria.nombreCategoria ;
         elementDivMarcas.replaceChildren();
 

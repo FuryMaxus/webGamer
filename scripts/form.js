@@ -7,20 +7,22 @@ const formulario = document.getElementById('formulario');
 const errores = document.getElementById('errores');
 const fechanacimiento = document.getElementById('fechanacimiento');
 
-hoy=new Date();
-function calcularEdad(fechaNacimiento) {
-fechaNacimiento= new Date(fechanacimiento.value);
-let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
-const mes = hoy.getMonth() - fechaNacimiento.getMonth();
 
-if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
-    edad--;
-}  
-    return edad;
+function calcularEdad(fecha) {
+    const hoy=new Date();
+    const fechaNacimiento= new Date(fecha);
+
+    let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+    const mes = hoy.getMonth() - fechaNacimiento.getMonth();
+
+    if (mes < 0 || (mes === 0 && hoy.getDate() < fechaNacimiento.getDate())) {
+        edad--;
+    }  
+        return edad;
 }
 
 fechanacimiento.addEventListener('change', function (e) {
-    let edad = calcularEdad(fechanacimiento.value);
+    const edad = calcularEdad(fechanacimiento.value);
     if (edad < 18) {
     fechanacimiento.classList.add("error");
     errores.innerHTML = "Debes ser mayor de 18 años para registrarte!."; 
