@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Up Gamer - Inicio</title>
-    <link rel="stylesheet" href="/styles/levelUp.css">
+    <link rel="stylesheet" href="/styles/carro.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
@@ -21,53 +21,78 @@
             <div id="session-buttons-container">
                 <a href="carro.html" id="cart-icon"><span>3</span><i class="fa-solid fa-cart-shopping icono-header"></i></a>
                 <a href="#"><i class="fa-regular fa-user icono-header"></i></a>
-                <a href="#"><i class="fa-solid fa-user-plus icono-header"></i></a>
+                <a href="form.html"><i class="fa-solid fa-user-plus icono-header"></i></a>
             </div>
         </div>
         <div id="header-bottom">
             <nav>
-                <button data-url="index.html" >Inicio</button>
+                <button data-url="index.html" class="selected-button-header">Inicio</button>
                 <button data-url="catalogo.html">Catalogo</button>
-                <button data-url="levelUp.html" class="selected-button-header">Level Up</button>
+                <button data-url="levelUp.html" >Level Up</button>
                 <button data-url="noticias.html" >Noticias</button>
                 <button data-url="acercaDe.html" >Acerca de</button>
             </nav>
         </div>
     </header>
     <main>
-
-        <section id="level-up-meter-container">
-            <h3>Medidor Level-Up</h3>
-            <div id="level-up-meter">
-                <div id="level-up-meter-level-number">
-                    <h3>lv 2</h3>
-                </div>
-                <div id="level-up-meter-progress">
-                    <p>1300pts</p>
-                </div>
+        <section id="cart-products-container">
+            <h1>Carro</h1>
+            <div id="checkbox-select-all-container">
+                <input type="checkbox" name="" id="" checked>
+                <label for="">Seleccionar todos</label>
             </div>
-            <p>1700 pts para subir de nivel</p>
+            <hr>
+            <div class="cart-product">
+                <input type="checkbox" name="cart-product-selected" id="product1" checked>
+                <img src="images/example.png" alt="">
+                <div>
+                    <h3>Nombre Producto 1</h3>
+                    <p>marca</p>
+                </div>
+                <div>$100.000</div>
+                <button>Eliminar</button>
+            </div>
+            <hr>
+            <div class="cart-product">
+                <input type="checkbox" name="cart-product-selected" id="product1" checked>
+                <img src="images/example.png" alt="">
+                <div>
+                    <h3>Nombre Producto 2</h3>
+                    <p>marca</p>
+                </div>
+                <div>$50.000</div>
+                <button>Eliminar</button>
+            </div>
+            <hr>
+            <div class="cart-product">
+                <input type="checkbox"  name="cart-product-selected" id="product1" checked>
+                <img src="images/example.png" alt="">
+                <div>
+                    <h3>Nombre Producto 3</h3>
+                    <p>marca</p>
+                </div>
+                <div>$4999</div>
+                <button>Eliminar</button>
+            </div>
+            <hr>
         </section>
-
-        <section id="info-level-up-system-container">
-            <h1>Sistema Level-Up</h1>
-            <p>
-                Consigue punto recomendado la pagina con tu codigo de referidos o en nuestros
-                eventos presenciales para canjear puntos y descuentos
-            </p>
-        </section>
-       
-        <section id="spend-points-container">
-            <h3>Gasta tus Puntos!</h3>
+        <section id="cart-total-payment-container">
+            <h1>Resumen de Compra</h1>
             <div>
-                <button>Canjear Productos</button>
-                <button>Canjear Descuentos</button>
+                <p>Productos(3)</p>
+                <p>$154.999</p>
             </div>
-        </section>
-
-        <section id="event-map-container">
-            <h3>Mapa de eventos</h3>
-            <img src="images/mapa_chile.png" alt="">
+            <hr>
+            <div>
+                <p>Descuentos(0)</p>
+                <p>$0</p>
+            </div>
+            <hr>
+            <div>
+                <p>Total:</p>
+                <p>$154.999</p>
+            </div>
+            <button>Continuar Compra</button>
         </section>
     </main>
     <footer>
