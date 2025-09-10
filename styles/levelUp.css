@@ -1,0 +1,117 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+p{
+    color: #D3D3D3;
+}
+
+#info-level-up-system-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    border: 2px solid #39FF14;
+    border-radius: 10px;
+    padding: 1em;
+
+}
+
+#level-up-meter {
+    display: flex;
+    width: 500px;
+    height: 50px;
+    position: relative;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #39FF14;
+}
+
+
+#level-up-meter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    margin-left: 60px;
+}
+
+#level-up-meter-container > p, #level-up-meter-container > h3{
+    margin-right: 60px;
+}
+
+
+#level-up-meter-level-number {
+    height: 50px;
+    width: 60px;
+    position: absolute;
+    left: -50px;
+    top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #39FF14;
+    border-right-width: 4px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #1E90FF;
+}
+
+#level-up-meter-progress {
+    width: 43.3%;
+    background-color: #1E90FF;
+    
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#level-up-meter-progress > p {
+    padding-left: 1em;
+    font-size: 30px;
+    font-weight: bold  ;
+}
+
+#spend-points-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    border: 2px solid #39FF14;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+#spend-points-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+#spend-points-container > div >button {
+    padding: 1em;
+    font-size: 18px;
+}
+
+#event-map-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #39FF14;
+    padding: 1em;
+    gap: .5em ;
+}
+
+#event-map-container > img{
+    width: 300px;
+    border: 2px solid #1E90FF;
+}

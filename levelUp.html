@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Level Up Gamer - Inicio</title>
-    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/levelUp.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <body>
@@ -26,21 +26,48 @@
         </div>
         <div id="header-bottom">
             <nav>
-                <button data-url="index.html" class="selected-button-header">Inicio</button>
+                <button data-url="index.html" >Inicio</button>
                 <button data-url="catalogo.html">Catalogo</button>
-                <button data-url="levelUp.html" >Level Up</button>
+                <button data-url="levelUp.html" class="selected-button-header">Level Up</button>
                 <button data-url="noticias.html" >Noticias</button>
                 <button data-url="acercaDe.html" >Acerca de</button>
             </nav>
         </div>
     </header>
     <main>
-        <section>
-            <div id="image-carrusel">
-                <img src="images/banner1.png" alt="Banner 1" class="carrusel-img active">
-                <button id="prev-carrusel" class="carrusel-button">&#10094;</button>
-                <button id="next-carrusel" class="carrusel-button">&#10095;</button>
+
+        <section id="level-up-meter-container">
+            <h3>Medidor Level-Up</h3>
+            <div id="level-up-meter">
+                <div id="level-up-meter-level-number">
+                    <h3>lv 2</h3>
+                </div>
+                <div id="level-up-meter-progress">
+                    <p>1300pts</p>
+                </div>
             </div>
+            <p>1700 pts para subir de nivel</p>
+        </section>
+
+        <section id="info-level-up-system-container">
+            <h1>Sistema Level-Up</h1>
+            <p>
+                Consigue punto recomendado la pagina con tu codigo de referidos o en nuestros
+                eventos presenciales para canjear puntos y descuentos
+            </p>
+        </section>
+       
+        <section id="spend-points-container">
+            <h3>Gasta tus Puntos!</h3>
+            <div>
+                <button>Canjear Productos</button>
+                <button>Canjear Descuentos</button>
+            </div>
+        </section>
+
+        <section id="event-map-container">
+            <h3>Mapa de eventos</h3>
+            <img src="images/mapa_chile.png" alt="">
         </section>
     </main>
     <footer>
